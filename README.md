@@ -4,7 +4,6 @@
 > Course project for *Introduction to Artificial Intelligence L2* | Selin Dyortkardeshler | 
 
 ---
-<img width="2336" height="1183" alt="fig2_sample_images" src="https://github.com/user-attachments/assets/9a1a7385-eaaf-44ba-a3e9-871fb6465f6b" />
 
 ## 📊 Final Results at a Glance
 
