@@ -4,6 +4,7 @@
 > Course project for *Introduction to Artificial Intelligence L2* | Selin Dyortkardeshler | 
 
 ---
+<img width="2336" height="1183" alt="fig2_sample_images" src="https://github.com/user-attachments/assets/9a1a7385-eaaf-44ba-a3e9-871fb6465f6b" />
 
 ## 📊 Final Results at a Glance
 
@@ -55,12 +56,18 @@ This project was developed iteratively across four reports, each building on the
 - Augmentation pipeline: rotation ±15°, horizontal flip, zoom ±10%, brightness [0.8–1.2]
 - Images resized to **224×224** for ResNet50 compatibility
 
+<img width="2336" height="1183" alt="fig2_sample_images" src="https://github.com/user-attachments/assets/0447452b-cbb1-47ef-88f2-eb94d98079a1" />
+
+
 ### Report 2 — Custom CNN (Variants A & B)
 - Architecture: 3 convolutional blocks (32→64→128 filters) + GlobalAvgPooling + Dense head
 - **110,785 trainable parameters** — efficient, runs on consumer hardware
 - **Key finding:** Kaggle's original 16-image validation set caused catastrophic training instability
 - Variant B fix: 20% stratified validation split → +21% accuracy **without any architecture change**
 - Additional regularization: Dropout 0.6 + L2 λ=1×10⁻⁴ reduced train/test gap from 30 → 7 points
+
+<img width="2084" height="763" alt="fig1_training_curves" src="https://github.com/user-attachments/assets/c4a94f08-ec54-48bc-953f-282116977ba0" />
+
 
 ### Report 3 — ResNet50 Transfer Learning
 - Backbone: **ResNet50** pre-trained on ImageNet (1.2M images)
@@ -69,10 +76,13 @@ This project was developed iteratively across four reports, each building on the
   - Phase 2 (Fine-tuning): top 30 layers unfrozen, LR=0.00001
 - Achieves ROC-AUC = **0.974** — near radiologist-level discrimination
 
+
 ### Report 4 — Comparison & Conclusions
 - ResNet50 outperforms Variant B on every primary metric
 - Variant B retains advantages in **efficiency** (200× fewer parameters) and **probability calibration**
 - Clinical deployment recommendation: ResNet50 at t=0.5 for primary screening
+  
+<img width="1334" height="732" alt="comparison_chart" src="https://github.com/user-attachments/assets/dc14633f-f5f4-4dbb-a4bf-ec8b8651028f" />
 
 ---
 
