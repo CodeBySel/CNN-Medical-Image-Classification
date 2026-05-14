@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset — too large for GitHub, download from Kaggle
+chest_xray/
+
+# Model weights & checkpoints — use Git LFS or cloud storage
+*.h5
+*.keras
+*.weights.h5
+*.ckpt
+*.pb
+checkpoints/
+saved_models/
+
+# Training logs & outputs
+*.log
+report_figures/
+training_history/
+*.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

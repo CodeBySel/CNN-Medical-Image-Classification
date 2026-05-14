@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.7372,
+  "precision": 0.8115,
+  "recall": 0.7372,
+  "f1": 0.7392,
+  "roc_auc": 0.9154,
+  "pr_auc": 0.944,
+  "loss": 0.5523,
+  "total_params": 110785,
+  "epochs_trained": 14,
+  "normal_precision": 0.5951,
+  "normal_recall": 0.9359,
+  "normal_f1": 0.7276,
+  "pneumonia_precision": 0.9414,
+  "pneumonia_recall": 0.6179,
+  "pneumonia_f1": 0.7461,
+  "cm_tn": 219,
+  "cm_fp": 15,
+  "cm_fn": 149,
+  "cm_tp": 241
+}
